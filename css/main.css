@@ -1,0 +1,160 @@
+/*
+* CompSource Oklahoma 2012 Annual Report
+* 11/19/2013
+*/
+
+/* #Basic Styles
+================================================== */
+html{height:100%; overflow-y:scroll;}
+body{padding:0px; margin:0px; background:#dae1eb; overflow: hidden; }
+.container{max-width:896px; margin:0px auto; position:relative;}
+
+.wrap{background:url('../images/background.png') top center no-repeat fixed; position:relative;}
+#content{background-color:#ffffff; overflow: hidden;}
+.left-column{float:left; width:357px; padding-left:22px; padding-right:52px; position:relative;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.left-column img.ignore-pad{position:relative; left:-22px;}
+.right-column{float:right; width:539px; padding-right:22px; position:relative;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+.clearfix:before,.clearfix:after {display: table;content: " ";}
+.clearfix:after {clear: both;}
+
+/* Site Header
+================================================== */
+#site-header{background:#dae1eb; margin:0px auto; height:138px; width:100%; position: relative; z-index:999;}
+#site-header .container{width: 907px;}
+#site-header .logo{float:left; margin-top:29px; margin-left:20px; }
+
+#workers-header-image{ background:url('../images/workers.jpg') top center no-repeat; height:511px;}
+#workers-header{background:url('../images/workers-bg.jpg') top center repeat-x #004990; height:511px;}
+
+.push-down-title{ width:100%; height:444px;}
+#title{width:100%; height:48px; background:#004990; z-index:99;}
+#fake-break{margin-right:125px;  height:20px;}
+#annual-report-h1{color:#a2b2cc; font-size:25px; width:230px; font-style:italic; line-height:28px; padding-top:9px; margin:0px;}
+#h1-border{width:1px; height:78px; background-color:#a2b2cc; position:absolute; left:180px; top:-20px;}
+#committed-ok{color:#ffffff; font-size:41px; display:block; position:absolute; top: -65px; left:300px; font-family: 'Lato','Open Sans', sans-serif;}
+#committed-future{color:#ffffff; font-size:41px; display:block; position:absolute; top: -15px;  left:400px; font-family: 'Lato','Open Sans', sans-serif;}
+
+#spacer{display:block; height:12px; background-color:#dae1eb;; width:100%; z-index:99;}
+
+
+/* #Navigation
+================================================== */
+#navigation{width:896px;  z-index:99;}
+#navigation a{ 
+	text-align:center; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display:block;
+	width:100%;
+	height:53px;
+	font-size:15px;
+	font-style:italic;
+	color:#ffffff;
+	line-height:53px;
+}
+#presidents-message-btn{background:url('../images/navigation/presidents-message.png') top center no-repeat;}
+#presidents-message-btn:hover{background:url('../images/navigation/presidents-message-on.png') top center no-repeat;}
+#presidents-message-btn.active{background:url('../images/navigation/presidents-message-on.png') top center no-repeat;}
+#leadership-btn{background:url('../images/navigation/leadership.png') top center no-repeat;}
+#leadership-btn:hover{background:url('../images/navigation/leadership-on.png') top center no-repeat;}
+#leadership-btn.active{background:url('../images/navigation/leadership-on.png') top center no-repeat;}
+#enhancing-the-customer-experience-btn{background:url('../images/navigation/enhancing-the-customer-experience.png') top center no-repeat;}
+#enhancing-the-customer-experience-btn:hover{background:url('../images/navigation/enhancing-the-customer-experience-on.png') top center no-repeat;}
+#enhancing-the-customer-experience-btn.active{background:url('../images/navigation/enhancing-the-customer-experience-on.png') top center no-repeat;}
+#compsource-cares-btn{background:url('../images/navigation/compsource-cares.png') top center no-repeat;}
+#compsource-cares-btn:hover{background:url('../images/navigation/compsource-cares-on.png') top center no-repeat;}
+#compsource-cares-btn.active{background:url('../images/navigation/compsource-cares-on.png') top center no-repeat;}
+#financial-summary-btn{background:url('../images/navigation/financial-summary.png') top center no-repeat;}
+#financial-summary-btn:hover{background:url('../images/navigation/financial-summary-on.png') top center no-repeat;}
+#financial-summary-btn.active{background:url('../images/navigation/financial-summary-on.png') top center no-repeat;}
+
+
+
+#navigation ul{list-style:none; padding:0; height:53px; background:#02a5c3; overflow:hidden;}
+#navigation li{
+	float:left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display:block;
+	width:20%;
+}
+
+
+/* #President's Message
+================================================== */
+#presidents-message{padding-bottom:115px;}
+#presidents-message .push-down-image{height:115px;}
+#presidents-message .push-down-quote{height:55px;}
+#presidents-message .signature{position:relative; left:-60px;}
+#presidents-message .left-column p{font-style:italic;}
+/* #Leadership
+================================================== */
+#leadership {padding-bottom:115px;}
+#leadership .green-wrap{background:#7e8643; height:104px;}
+#leadership .green-wrap h2{color:#fdfdfb; font-weight:100; margin:0; margin-top:40px;}
+#leadership h3{color:#7e8643; font-weight:500;  font-size:23px; font-style:italic; margin:0; }
+#leadership .executive-team-wrap{position:relative; left:-22px; height:104px; padding:43px 22px; background-color:#f2f0cb; width:180px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#leadership .photo{float:left; width:164px; overflow:hidden; margin-top:19px;}
+#leadership .photo p{width:110px; padding-left:16.75px;}
+#leadership .gutter{float:left; display:block; height:17px; width:19px;}
+#leadership .push-down-board-of-managers{width:100%; height:50px;}
+#leadership .board-of-managers-wrap{float:left; height:207px; width:346.75px; margin-top:19px; background-color:#f2f0cb; color:#7e8643;}
+#leadership .board-of-managers-wrap h3{left:-22px; color:#7e8643; font-weight:500; height:104px; font-size:23px; font-style:italic; padding:143px 22px; margin:0;width:180px;}
+
+/* #Enhancing the Customer Experience
+================================================== */
+#enhancing-the-customer-experience{padding-bottom:115px;}
+#enhancing-the-customer-experience .tan-wrap{background:#f4e1c4; padding-top:25px; padding-bottom:50px;}
+#enhancing-the-customer-experience .green-wrap{background:#7e8643; height:265px; overflow:hidden;}
+#enhancing-the-customer-experience .green-wrap h2{margin-top:160px; margin-left:15px; color:#fdfdfb; font-weight:100; width:400px;}
+/* #Compsource Cares
+================================================== */
+#compsource-cares{padding-bottom:115px; position:relative;}
+#compsource-cares .green-bg{position:absolute; top:280px; width:100%; height:1850px; background-color:#eff2b5;}
+#compsource-cares .initiative{margin:11px 0px; position:relative;}
+#compsource-cares .initiative .left-column{position:absolute;}
+#compsource-cares .initiative p{font-style:italic;}
+#compsource-cares .arrow{position:absolute; display:block; height:72px; width:35px; left:352px; background:url('../images/compsource-cares/arrow.png') no-repeat;}
+#green-initiative .left-column{top:140px;}
+#green-initiative .arrow{top:45px; z-index:2;}
+#ronanld-mcdonald-house .left-column{top:60px;}
+#ronanld-mcdonald-house .arrow{top:70px; z-index:2;}
+#united-way-state-charitable-campaign .left-column{top:80px;}
+#united-way-state-charitable-campaign .arrow{top:50px; z-index:2;}
+#food-bank .left-column{top:60px;}
+#food-bank .arrow{top:40px; z-index:2;}
+#career-day .left-column{top:-30px;}
+#career-day .arrow{top:90px; z-index:2;}
+#operation-elf .left-column{top:80px;}
+#operation-elf .arrow{top:20px; z-index:2;}
+#enhancing-quote { color: #444;}
+/* # Financial Summary
+================================================== */
+#financial-summary{ padding-bottom:25px;}
+#financial-summary .push-down-p{height:145px;}
+#financial-summary .push-down-net{height:145px;}
+#financial-summary .push-down-net-p{height:45px;}
+#financial-summary .push-down-address{height:235px;}
+#financial-summary table{margin-left:22px; margin-bottom:50px; width:852px;}
+#financial-summary table thead{background-color:#7e8543;}
+#financial-summary table thead th{font-size:15px; font-weight:600; text-align:right; padding:4px 22px; color:#ffffff;}
+#financial-summary table tr{border-bottom:solid 1px #c7c5c5;}
+#financial-summary table tr td{font-size:14px; padding:6px 22px; text-align:right;}
+#financial-summary table tr td.align-left{text-align:left;}
+#financial-summary table tr.even{background-color:#e6e7d9;}
+#financial-summary span.pull-left{margin-left:50px; float:left;}
+#financial-summary h3{color:#7e8643; font-size: 29px;}
+#financial-summary .left-column p{font-style:italic;}
+#chart3title{width:400px;}
+/* # Footer
+================================================== */
+#footer{padding:25px 0px; text-align:center;}
+#footer .copyright{color:#888686;}
+
+#picture-of-girl { left: -22px; position: relative;}
+#annual-report-h1 { width: 300px; }
+#fake-break { display:none;}
+#h1-border { left: 250px;}

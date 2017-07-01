@@ -14,10 +14,10 @@ Each element you animate needs an ID. This isn't ideal, I know, but it get's the
 ```javascript
 $("#element").scrollMation({
 	action : "",//fadeIn,fadeOut,flyIn
-    scrollPos: height-(height*.1),// When to start the scroll. Distance from the top of screen.
-    duration: duration = (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels.
-    startPos: "", // Elements initial starting postion
-    endPos: "",   // Elements ending postion
+	scrollPos: height-(height*.1),// When to start the scroll. Distance from the top of screen.
+	duration: duration = (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels.
+	startPos: "", // Elements initial starting postion
+	endPos: "",   // Elements ending postion
 });
 ```
 
@@ -27,9 +27,17 @@ Make sure you include jQuery and the Scrollmation plugin on your page.
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
 	function yourAnimations(){
-		$("#title2").scrollMation({action : 'fadeIn',});
-		$("#title").scrollMation({action : 'fadeIn',});
-		$("#title").scrollMation({action : 'flyIn', startPos : 400, endPos: 0,});
+		//FadeIn Code Example
+		$("#fadeinCode").scrollMation({action : 'fadeIn',});
+		//FadeOut Code Example
+		$("#fadeoutCode").scrollMation({action : 'fadeOut',});
+		//FadeOut Code Example
+		$("#flyrightCode").scrollMation({action : 'flyIn', startPos : 600, endPos: 0,});
+		//FadeOut Code Example
+		$("#flyleftCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+		//Multiple Code Example
+		$("#multipleCode").scrollMation({action : 'fadeIn',});
+		$("#multipleCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
 	}
 	//Initiate the animations so that they apply before the user starts scrolling.
 	yourAnimations();

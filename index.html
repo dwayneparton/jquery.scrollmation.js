@@ -1,59 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>ScrollMation jQuery Plugin</title> 
-<meta name="description" content="Let the scrolling begin"/>   
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ScrollMation</title>
 
-<link rel="stylesheet" media="screen" type="text/css" href="css/bootstrap.min.css" />
-<link rel="stylesheet" media="screen" type="text/css" href="css/main.css" />
-
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.scrollmation.js"></script>
-</head>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/scrollmation.js"></script>
+  </head>
 <body>
 
-<div class="container">
-<div class="col-md-offset-2 col-md-8">
-	<h1>Scrollmation: A jQuery Plugin for scrolling animations</h1>
-	<p></p>
-	<hr />
-	<h2>How To Use</h2>
-	<h3>Options</h3>
-	<p>Scrollmation gives you quite a bit of flexibility to customize it's animations</p>
-	<h3>Fade In</h3>
-	<code class="fadein">
-		$('.fadein').scrollmation({'action': 'fadein'});
-	</code>
-	<h3>Fly Right</h3>
-	<code class="flyright">
-		$('.flyright').scrollmation({'action': 'flyright'});
-	</code>
-	<h2>Examples</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam massa. Donec varius dignissim orci. Donec euismod erat id ipsum vulputate, at cursus quam aliquam. Mauris nec nunc at neque facilisis lacinia a sed ante. Aenean mi eros, suscipit at magna porta, fermentum consequat lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque auctor pretium diam, eu vehicula sapien elementum non. Pellentesque sem sem, aliquam ac ornare eget, tempus vehicula nisi.</p>
-	<p>Quisque vulputate fringilla dui. Fusce vestibulum tincidunt ipsum vel porta. Cras orci sapien, fermentum ut sapien sed, cursus tempus mi. Fusce eu massa lacus. Maecenas congue ornare dui sed tempus. Maecenas in lorem sed sapien feugiat tristique at eget lacus. Sed varius nisl mauris, id iaculis est volutpat nec. Curabitur dignissim diam at augue fringilla, et tempor lorem pellentesque. Cras venenatis ipsum ipsum, nec ullamcorper sem tincidunt eu. Vestibulum varius cursus velit, pellentesque convallis diam. Sed lacinia lacinia risus nec pellentesque. Donec suscipit est tincidunt sem auctor, non condimentum dui pretium. Suspendisse iaculis erat a ipsum varius gravida.</p>
-	<p>Suspendisse eros ligula, feugiat non posuere et, semper sit amet mauris. Duis tristique nibh eget lacinia auctor. Mauris id scelerisque enim. Nullam eget velit magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi id erat nec felis dictum mattis. Integer diam erat, pulvinar non massa vitae, bibendum rhoncus felis. Aenean interdum sem nec laoreet accumsan. Integer eget metus id tellus pharetra interdum. Curabitur est metus, sollicitudin vitae commodo nec, scelerisque eu nunc. Sed augue nibh, rutrum sit amet auctor ac, sagittis id purus. Suspendisse accumsan turpis sed orci adipiscing, ut consequat magna mollis. Mauris posuere, metus ultricies porttitor fringilla, lorem purus egestas ante, et semper nulla eros et neque.</p>
-	<code class="fadein">
-		$('.fadein').scrollmation({'action': 'fadein'});
-	</code>
-	<p>Mauris sit amet odio at risus ullamcorper euismod. Vestibulum pellentesque, magna in feugiat consectetur, tellus libero mollis risus, sed elementum magna mauris at augue. Integer ultricies iaculis ultricies. Duis tempor posuere imperdiet. Curabitur luctus, dolor quis pulvinar malesuada, justo arcu laoreet nisi, sed rutrum ligula lacus a ante. Sed vestibulum adipiscing nunc vitae hendrerit. Donec gravida pulvinar nunc, vel vulputate est. Quisque purus mauris, rutrum ac ante nec, mollis porta risus. Etiam aliquam consectetur purus, a lacinia dui scelerisque ut. Aenean ligula lectus, egestas sit amet cursus ut, cursus vel erat.</p>
-	<p>Mauris sit amet odio at risus ullamcorper euismod. Vestibulum pellentesque, magna in feugiat consectetur, tellus libero mollis risus, sed elementum magna mauris at augue. Integer ultricies iaculis ultricies. Duis tempor posuere imperdiet. Curabitur luctus, dolor quis pulvinar malesuada, justo arcu laoreet nisi, sed rutrum ligula lacus a ante. Sed vestibulum adipiscing nunc vitae hendrerit. Donec gravida pulvinar nunc, vel vulputate est. Quisque purus mauris, rutrum ac ante nec, mollis porta risus. Etiam aliquam consectetur purus, a lacinia dui scelerisque ut. Aenean ligula lectus, egestas sit amet cursus ut, cursus vel erat.</p>
-	<code class="fadein">
-		$('.fadein').scrollmation({'action': 'fadein'});
-	</code>
-	<p>Mauris sit amet odio at risus ullamcorper euismod. Vestibulum pellentesque, magna in feugiat consectetur, tellus libero mollis risus, sed elementum magna mauris at augue. Integer ultricies iaculis ultricies. Duis tempor posuere imperdiet. Curabitur luctus, dolor quis pulvinar malesuada, justo arcu laoreet nisi, sed rutrum ligula lacus a ante. Sed vestibulum adipiscing nunc vitae hendrerit. Donec gravida pulvinar nunc, vel vulputate est. Quisque purus mauris, rutrum ac ante nec, mollis porta risus. Etiam aliquam consectetur purus, a lacinia dui scelerisque ut. Aenean ligula lectus, egestas sit amet cursus ut, cursus vel erat.</p>
-	<p>Mauris sit amet odio at risus ullamcorper euismod. Vestibulum pellentesque, magna in feugiat consectetur, tellus libero mollis risus, sed elementum magna mauris at augue. Integer ultricies iaculis ultricies. Duis tempor posuere imperdiet. Curabitur luctus, dolor quis pulvinar malesuada, justo arcu laoreet nisi, sed rutrum ligula lacus a ante. Sed vestibulum adipiscing nunc vitae hendrerit. Donec gravida pulvinar nunc, vel vulputate est. Quisque purus mauris, rutrum ac ante nec, mollis porta risus. Etiam aliquam consectetur purus, a lacinia dui scelerisque ut. Aenean ligula lectus, egestas sit amet cursus ut, cursus vel erat.</p>
-</div>
-</div>
-
-
-
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
-	$('.fadein').scrollmation({'action': 'fadein'});
+	function animations(){
+		//FadeIn Code Example
+		$("#fadeinCode").scrollMation({action : 'fadeIn',});
+		//FadeOut Code Example
+		$("#fadeoutCode").scrollMation({action : 'fadeOut',});
+		//FadeOut Code Example
+		$("#flyrightCode").scrollMation({action : 'flyIn', startPos : 600, endPos: 0,});
+		//FadeOut Code Example
+		$("#flyleftCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+		//Multiple Code Example
+		$("#multipleCode").scrollMation({action : 'fadeIn',});
+		$("#multipleCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+	}
+	animations();
+	$(window).scroll(function(){
+		animations();
+	});
 });
 </script>
+<div class="container">
 
+    <div class="page-header">
+		<h1>ScrollMation</h1>
+	</div>
+
+	<p>ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.</p>
+
+	<h2>How it works</h2>
+
+	<p>Each element you animate needs an ID. This isn't ideal, I know, but it get's the job done for now. Maybe I'll fix this later.</p>
+	
+	<h3>Element Options</h3>
+	<pre>
+	$("#element").scrollMation({
+		action : "",//fadeIn,fadeOut,flyIn
+	    scrollPos: height-(height*.1),// When to start the scroll. Distance from the top of screen.
+	    duration: duration = (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels.
+	    startPos: "", // Elements initial starting postion
+	    endPos: "",   // Elements ending postion
+	});
+	</pre>
+
+	<p>Make sure you include jQuery and the Scrollmation plugin on your page.</p>
+
+	<pre>
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#title2").scrollMation({action : 'fadeIn',});
+			$("#title").scrollMation({action : 'fadeIn',});
+			$("#title").scrollMation({action : 'flyIn', startPos : 400, endPos: 0,});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+
+	<h2>Keep Scrolling for Examples.</h2>
+	<h3>Fading In</h3>
+	<pre id="fadeinCode">
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#fadeinCode").scrollMation({action : 'fadeIn',});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+
+	<h3>Fade Out</h3>
+	<pre id="fadeoutCode">
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#fadeoutCode").scrollMation({action : 'fadeOut',});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+
+	<h3>Fly In</h3>
+	<h4>Fly From Right</h4>
+	<pre id="flyrightCode">
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#flyrightCode").scrollMation({action : 'fadeIn', startPos : -600, endPos: 0,});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+	<h4>Fly From Left</h4>
+	<pre id="flyleftCode">
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#flyleftCode").scrollMation({action : 'fadeIn', startPos : -600, endPos: 0,});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+	<h3>Multiple Effects</h3>
+	<p>You can add multiple effects to the same element. That's not really that impressive since there are only 3 effects but you can make a nice fade in slide effect like this:</p>
+	<pre id="multipleCode">
+	$(document).ready(function() {
+		//Create all your animations in a function. You define what you want to animate and how.
+		function yourAnimations(){
+			$("#multipleCode").scrollMation({action : 'fadeIn',});
+			$("#multipleCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+
+	<p>Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
+
+	<p>Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
+
+	<p>Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
+</div>
 </body>
 </html>

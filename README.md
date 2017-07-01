@@ -1,7 +1,7 @@
 ScrollMation
 ============
 
-Javascript plugin to makes elements animate on scroll.
+Javascript plugin to makes elements animate on scroll. Veiw it here: [Scrollmation Examples](https://dwayneparton.github.io/jquery.scrollmation.js/)
 
 ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.
 

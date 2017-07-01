@@ -5,11 +5,12 @@ Javascript plugin to makes elements animate on scroll.
 
 ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.
 
-##How it works
+## How it works
 
 Each element you animate needs an ID. This isn't ideal, I know, but it get's the job done for now. Maybe I'll fix this later.
 	
-###Element Options
+### Element Options
+
 ```javascript
 $("#element").scrollMation({
 	action : "",//fadeIn,fadeOut,flyIn
@@ -39,8 +40,10 @@ $(document).ready(function() {
 });
 ```
 
-##Keep Scrolling for Examples.
-###Fading In
+## Keep Scrolling for Examples.
+
+### Fading In
+
 ```javascript
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
@@ -56,7 +59,8 @@ $(document).ready(function() {
 });
 ```
 
-###Fade Out
+### Fade Out
+
 ```javascript
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
@@ -72,8 +76,10 @@ $(document).ready(function() {
 });
 ```
 
-###Fly In
-####Fly From Right
+### Fly In
+
+#### Fly From Right
+
 ```javascript
 $(document).ready(function() {
 		//Create all your animations in a function. You define what you want to animate and how.
@@ -88,7 +94,8 @@ $(document).ready(function() {
 		});
 });
 ```
-####Fly From Left</h4>
+#### Fly From Left
+
 ```javascript
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
@@ -103,8 +110,10 @@ $(document).ready(function() {
 	});
 });
 ```
-###Multiple Effects
+### Multiple Effects
+
 You can add multiple effects to the same element. That's not really that impressive since there are only 3 effects but you can make a nice fade in slide effect like this:
+
 ```javascript
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.

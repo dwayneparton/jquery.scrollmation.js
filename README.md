@@ -6,8 +6,6 @@ Javascript plugin to makes elements animate on scroll. Veiw it here: [Scrollmati
 ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.
 
 ## How it works
-
-Each element you animate needs an ID. This isn't ideal, I know, but it get's the job done for now. Maybe I'll fix this later.
 	
 ### Element Options
 
@@ -27,6 +25,8 @@ Make sure you include jQuery and the Scrollmation plugin on your page.
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
 	function yourAnimations(){
+		//Animate multiple objects the same way
+		$(".fadein").scrollMation({action : 'fadeIn',});
 		//FadeIn Code Example
 		$("#fadeinCode").scrollMation({action : 'fadeIn',});
 		//FadeOut Code Example
@@ -128,6 +128,25 @@ $(document).ready(function() {
 	function yourAnimations(){
 		$("#multipleCode").scrollMation({action : 'fadeIn',});
 		$("#multipleCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+	}
+	//Initiate the animations so that they apply before the user starts scrolling.
+	yourAnimations();
+	//Add the scroll event and call the animations function.
+	$(window).scroll(function(){
+		yourAnimations();
+	});
+});
+```
+
+### Apply Same Effect to Muliple Objects
+
+You can apply effects to elements of a certain class by definine the class animation:
+
+```javascript
+$(document).ready(function() {
+	//Create all your animations in a function. You define what you want to animate and how.
+	function yourAnimations(){
+		$(".fadein").scrollMation({action : 'fadeIn',});
 	}
 	//Initiate the animations so that they apply before the user starts scrolling.
 	yourAnimations();

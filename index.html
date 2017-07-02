@@ -23,6 +23,8 @@
 <script>
 $(document).ready(function() {
 	function animations(){
+		//Animate multiple objects the same way
+		$(".fadein").scrollMation({action : 'fadeIn',});
 		//FadeIn Code Example
 		$("#fadeinCode").scrollMation({action : 'fadeIn',});
 		//FadeOut Code Example
@@ -32,8 +34,8 @@ $(document).ready(function() {
 		//FadeOut Code Example
 		$("#flyleftCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
 		//Multiple Code Example
-		$("#multipleCode").scrollMation({action : 'fadeIn',});
-		$("#multipleCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
+		$("#multipleEffectsCode").scrollMation({action : 'fadeIn',});
+		$("#multipleEffectsCode").scrollMation({action : 'flyIn', startPos : -600, endPos: 0,});
 	}
 	animations();
 	$(window).scroll(function(){
@@ -50,8 +52,6 @@ $(document).ready(function() {
 	<p>ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.</p>
 
 	<h2>How it works</h2>
-
-	<p>Each element you animate needs an ID. This isn't ideal, I know, but it get's the job done for now. Maybe I'll fix this later.</p>
 	
 	<h3>Element Options</h3>
 	<pre>
@@ -70,6 +70,8 @@ $(document).ready(function() {
 	$(document).ready(function() {
 		//Create all your animations in a function. You define what you want to animate and how.
 		function yourAnimations(){
+			//Animate multiple objects the same way
+			$(".fadein").scrollMation({action : 'fadeIn',});
 			//FadeIn Code Example
 			$("#fadeinCode").scrollMation({action : 'fadeIn',});
 			//FadeOut Code Example
@@ -155,9 +157,9 @@ $(document).ready(function() {
 		});
 	});
 	</pre>
-	<h3>Multiple Effects</h3>
+	<h3 class="fadein">Multiple Effects</h3>
 	<p>You can add multiple effects to the same element. That's not really that impressive since there are only 3 effects but you can make a nice fade in slide effect like this:</p>
-	<pre id="multipleCode">
+	<pre id="multipleEffectsCode">
 	$(document).ready(function() {
 		//Create all your animations in a function. You define what you want to animate and how.
 		function yourAnimations(){
@@ -172,8 +174,23 @@ $(document).ready(function() {
 		});
 	});
 	</pre>
-
-	<p>Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
+	<h3 class="fadein">Apply Same Effect to Muliple Objects</h3>
+	<p>You can apply effects to elements of a certain class by definine the class animation:</p>
+	<pre id="multipleObjetsCode" class="fadein">
+	$(document).ready(function() {
+		//Any object with the fadein class with fade in as scroll happens
+		function yourAnimations(){
+			$(".fadein").scrollMation({action : 'fadeIn',});
+		}
+		//Initiate the animations so that they apply before the user starts scrolling.
+		yourAnimations();
+		//Add the scroll event and call the animations function.
+		$(window).scroll(function(){
+			yourAnimations();
+		});
+	});
+	</pre>
+	<p class="fadein">Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
 
 	<p>Curabitur tincidunt lectus ut egestas blandit. Sed sagittis ante in vestibulum convallis. Mauris volutpat sit amet ipsum in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam pretium elit eu pretium commodo. Fusce aliquet lorem eget nibh porttitor, vel faucibus nisl mollis. Proin ut consequat lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat elit ac lectus bibendum, non efficitur nisl facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec velit ex, ornare sit amet congue et, sagittis nec nisi. </p>
 

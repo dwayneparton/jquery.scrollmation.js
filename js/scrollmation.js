@@ -14,8 +14,6 @@
             endPos: "",   // Elements ending postion
 
         }, options );
-
-
         //Get the initial elements position
         var getPos = function(element){
 			elementPos = element.offset().top;	
@@ -82,15 +80,19 @@
 				element.css({'left': left+'px'});
 			}
 		}
-		//Do the action
-		if ( settings.action === "fadeIn") {
-            return fadeIn(this);
-        }
-        if ( settings.action === "fadeOut" ) {
-            return fadeOut(this);
-        }
-        if ( settings.action === "flyIn" ) {
-            return flyIn(this);
-        }
+		return this.each(function() {
+			//Fade In
+			if ( settings.action === "fadeIn") {
+	            return fadeIn($( this ));
+	        }
+	        //Fade Out
+	        if ( settings.action === "fadeOut" ) {
+	            return fadeOut($( this ));
+	        }
+	        //Fly In
+	        if ( settings.action === "flyIn" ) {
+	            return flyIn($( this ));
+	        }
+   		});
 	};
 }( jQuery ));

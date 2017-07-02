@@ -11,11 +11,11 @@ ScrollMation is designed to help developers animate elements on the scroll. Elem
 
 ```javascript
 $("#element").scrollMation({
-	action : "",//fadeIn,fadeOut,flyIn
-	scrollPos: height-(height*.1),// When to start the scroll. Distance from the top of screen.
-	duration: duration = (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels.
-	startPos: "", // Elements initial starting postion
-	endPos: "",   // Elements ending postion
+	action : "fadeIn", //fadeIn,fadeOut,flyIn
+	scrollPos: height-(height*.1), //When to start the scroll. Distance from the top of screen.
+	duration: duration = (height-247)*.35, //How log the animation lasts. This is a number of scrolled pixels.
+	startPos: 600, //Elements initial starting postion, used for flyIn
+	endPos: 0, //Elements ending postion, used for flyIn
 });
 ```
 

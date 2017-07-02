@@ -156,3 +156,7 @@ $(document).ready(function() {
 	});
 });
 ```
+
+## Things Worth Noting
+
+* You may need to add overflow:hidden; to the container or <body style="overflow-x: hidden;"> in order to prevent the scroll bar from showing. May add this in the future.

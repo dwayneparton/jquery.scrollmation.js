@@ -1,17 +1,18 @@
 // ScrollMation
 // A Rough Draft
 (function( $ ) {
+
 	//ScrollMation
 	$.fn.scrollMation = function(options) {
 		var height = $( window ).height();
 		// ScrollMation Settings
         var settings = $.extend({
             // These are the defaults.
-            action : "",//fadeIn,fadeOut,flyRight,flyLeft
+            action : 'fadeIn',//fadeIn,fadeOut,flyRight,flyLeft
             scrollPos: height-(height*.15),// When to start the scroll. Distance from the top of screen.
             duration: duration = (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels.
-            startPos: "", // Elements initial starting postion
-            endPos: "",   // Elements ending postion
+            startPos: 600, // Elements initial starting postion
+            endPos: 0,   // Elements ending postion
 
         }, options );
         //Get the initial elements position

@@ -56,11 +56,11 @@ $(document).ready(function() {
 	<h3>Element Options</h3>
 	<pre>
 	$("#element").scrollMation({
-		action : "", //fadeIn,fadeOut,flyIn
-		scrollPos: height-(height*.1), //When to start the scroll. Distance from the top of screen.
-		duration: duration = (height-247)*.35, //How log the animation lasts. This is a number of scrolled pixels.
-		startPos: 600, //Elements initial starting postion, used for flyIn
-		endPos: 0,   //Elements ending postion, used for flyIn
+		action : "fadeIn", // fadeIn,fadeOut,flyIn
+		scrollPos: height-(height*.1), // When to start the scroll. Distance from the top of screen. height = $( window ).height();
+		duration: (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels. 
+		startPos: 600, // Elements initial starting postion, used for flyIn
+		endPos: 0, // Elements ending postion, used for flyIn
 	});
 	</pre>
 

@@ -52,11 +52,12 @@
 		var fadeOut = function(element){
 			currentPos = getPos(element);
 			endPos = settings.scrollPos - settings.duration;
-			if(currentPos >= endPos){
-				opacity = '100';
+			if(currentPos >= settings.scrollPos){
 				element.css(getOpacity(100)); //RDH CHANGE
+			} else if(currentPos <= endPos){
+				element.css(getOpacity(0)); //RDH CHANGE
 			} else {
-				opacity = 1-(settings.scrollPos-currentPos)/(settings.scrollPos);
+				opacity = 1-(settings.scrollPos-currentPos)/(settings.scrollPos-endPos);
 				element.css(getOpacity(opacity*100)); //RDH CHANGE
 			}
 		}

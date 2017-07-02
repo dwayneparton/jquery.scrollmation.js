@@ -30,7 +30,7 @@ $(document).ready(function() {
 		//FadeIn Code Example
 		$("#fadeinCode").scrollMation({action : 'fadeIn',});
 		//FadeOut Code Example
-		$("#fadeoutCode").scrollMation({action : 'fadeOut',});
+		$("#fadeoutCode").scrollMation({action : 'fadeOut', scrollPos : 250,});
 		//FadeOut Code Example
 		$("#flyrightCode").scrollMation({action : 'flyIn', startPos : 600, endPos: 0,});
 		//FadeOut Code Example
@@ -69,11 +69,13 @@ $(document).ready(function() {
 
 ### Fade Out
 
+With fadeout you will want to add a higher scroll position.
+
 ```javascript
 $(document).ready(function() {
 	//Create all your animations in a function. You define what you want to animate and how.
 	function yourAnimations(){
-		$("#fadeoutCode").scrollMation({action : 'fadeOut',});
+		$("#fadeoutCode").scrollMation({action : 'fadeOut', scrollPos : 250,});
 	}
 	//Initiate the animations so that they apply before the user starts scrolling.
 	yourAnimations();

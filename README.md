@@ -94,7 +94,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 		//Create all your animations in a function. You define what you want to animate and how.
 		function yourAnimations(){
-			$("#flyrightCode").scrollMation({action : 'fadeIn', startPos : -600, endPos: 0,});
+			$("#flyrightCode").scrollMation({action : 'fadeIn', startPos : 600, endPos: 0,});
 		}
 		//Initiate the animations so that they apply before the user starts scrolling.
 		yourAnimations();

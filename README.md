@@ -142,7 +142,7 @@ $(document).ready(function() {
 
 ### Apply Same Effect to Muliple Objects
 
-You can apply effects to elements of a certain class by definine the class animation:
+You can apply effects to elements of a certain class by defining the class animation:
 
 ```javascript
 $(document).ready(function() {
@@ -161,4 +161,4 @@ $(document).ready(function() {
 
 ## Things Worth Noting
 
-* You may need to add overflow:hidden; to the container or <body style="overflow-x: hidden;"> in order to prevent the scroll bar from showing. May add this in the future.
+* You may need to add overflow:hidden; to the container or `<body style="overflow-x: hidden;">` in order to prevent the scroll bar from showing. May add this in the future.

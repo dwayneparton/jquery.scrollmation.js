@@ -1,7 +1,7 @@
 ScrollMation
 ============
 
-Javascript plugin to makes elements animate on scroll. Veiw it here: [Scrollmation Examples](https://dwayneparton.github.io/jquery.scrollmation.js/)
+Javascript plugin to makes elements animate on scroll. View it here: [Scrollmation Examples](https://dwayneparton.github.io/jquery.scrollmation.js/)
 
 ScrollMation is designed to help developers animate elements on the scroll. Elements flyin and fade out as the user scrolls down the page. It's not super glamorous but it's a start.
 
@@ -13,7 +13,7 @@ ScrollMation is designed to help developers animate elements on the scroll. Elem
 $("#element").scrollMation({
 	action : "fadeIn", // fadeIn,fadeOut,flyIn
 	scrollPos: height-(height*.1), // When to start the scroll. Distance from the top of screen. height = $( window ).height();
-	duration: (height-247)*.35, // How log the animation lasts. This is a number of scrolled pixels. 
+	duration: (height-247)*.35, // How long the animation lasts. This is a number of scrolled pixels. 
 	startPos: 600, // Elements initial starting postion, used for flyIn
 	endPos: 0, // Elements ending postion, used for flyIn
 });
